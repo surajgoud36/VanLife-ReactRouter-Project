@@ -1,0 +1,33 @@
+.host-van-child-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #161616;
+}
+.host-van-child-info p{
+    margin: 0;
+}
+.host-van-pricing{
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+    margin: 0;
+}
+.host-van-pricing span{
+    color: #4D4D4D;
+    font-size: 1rem;
+
+}
+.van-photo-container{
+    height: 103px;
+    width: 103px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.van-photo-container img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    display: block;
+}

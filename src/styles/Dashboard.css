@@ -1,0 +1,85 @@
+.dashboard-container {
+  /* padding: 37px 26px 50px; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-container a {
+  text-decoration: unset;
+  color: unset;
+}
+.dashboard-container a:hover {
+  text-decoration: underline;
+}
+.dashboard-income {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffead0;
+  padding: 36px 26px;
+}
+.income-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.income-info p {
+  color: #4d4d4d;
+  margin: 0;
+}
+.income-info h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.income-info h2 {
+  font-size: 45px;
+  margin: 0;
+}
+.income-info p span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+.dashboard-review {
+  padding: 25px 26px;
+  display: flex;
+  align-items: center;
+   background-color: #ffddb2;
+}
+.dashboard-review h2{
+    margin: 0;
+}
+.dashboard-review .star {
+  color: #ff8c38;
+  margin-left: 15px;
+  font-size: 25px;
+}
+.dashboard-review p {
+  margin-left: 5px;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+.dashboard-review span {
+  font-weight: bold;
+  color: #161616;
+}
+.dashboard-review a {
+  margin-left: auto;
+}
+.top a{
+    margin-left: auto;
+}
+.top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.top h2{
+    margin: 0;
+}
+.dashboard-vans {
+    padding: 38px 26px;
+}
+.link-view{
+    margin-left: auto;
+}
