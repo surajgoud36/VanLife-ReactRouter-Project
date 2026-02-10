@@ -12,73 +12,70 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 .host-nav {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .host-nav a {
-    text-decoration: none;
-    color: #4D4D4D;
-    font-weight: 500;
-    padding: 5px 20px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 20px;
 }
 
 .host-nav a:hover {
-    color: #161616;
-    text-decoration: underline;
-    font-weight: 600;
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 600;
 }
 /* Host van detail nav */
 .host-van-detail-nav {
-    display: flex;
-    margin-block: 25px;
+  display: flex;
+  margin-block: 25px;
 }
 
 .host-van-detail-nav a {
-    text-decoration: none;
-    color: #4D4D4D;
-    font-weight: 500;
-    padding: 5px 20px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 20px;
 }
 
 .host-van-detail-nav a:first-of-type {
-    text-decoration: none;
-    color: #4D4D4D;
-    font-weight: 500;
-    padding: 5px 15px;
-    margin-left: -15px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 15px;
+  margin-left: -15px;
 }
 
 .host-van-detail-nav a:hover {
-    color: #161616;
-    text-decoration: underline;
-    font-weight: 700;
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
-.not-found{
+.not-found {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   flex: 1;
   justify-content: center;
-  padding:26px;
+  padding: 26px;
 }
-.not-found h1{
+.not-found h1 {
   color: #161616;
   font-size: 32px;
-
 }
-.return-to-home{
+.return-to-home {
   border: none;
   background-color: #161616;
   border-radius: 5px;
@@ -91,66 +88,95 @@ body {
 }
 
 .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-inline: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 27px;
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 500px;    
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
 }
 
 .login-form > input {
-    border: 1px solid rgba(209, 213, 219);
-    height: 40px;
-    text-indent: 10px;
-    font-family: "Inter", sans-serif;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    font-weight: 400;
+  border: 1px solid rgba(209, 213, 219);
+  height: 40px;
+  text-indent: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
 }
 
 .login-form > input:focus {
-    outline: none;
+  outline: none;
 }
 
 .login-form > input:first-of-type {
-    border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
 }
 
 .login-form > input:last-of-type {
-    border-radius: 0px 0px 6px 6px;
-    border-top: none;
+  border-radius: 0px 0px 6px 6px;
+  border-top: none;
 }
 
 .login-form > button {
-    background-color: #FF8C38;
-    border: none;
-    border-radius: 6px;
-    height: 55px;
-    margin-top: 22px;
-    margin-bottom: 20px;
-    color: white;
-    font-family: "Inter", sans-serif;
+  background-color: #ff8c38;
+  border: none;
+  border-radius: 6px;
+  height: 55px;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
- .login-icon {
-    height: 18px;
-    width: 18px;
-}
-
- .login-link {
-    display: inline-flex;
-    align-items: center;
+.login-icon {
+  height: 18px;
+  width: 18px;
 }
 
-@media only screen and (max-width :400px){
-  .host-nav a{
+.login-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.popup {
+  position: fixed;
+  top: 5px;
+  left: 36%;
+  background: #353030;
+  color: white;
+  padding: 10px 20px 5px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  min-width: 240px;
+  max-width: 500px;
+}
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+.popup-close:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 400px) {
+  .host-nav a {
     padding: 5px 15px;
   }
-  .return-to-home{
+  .return-to-home {
     padding: 13px 50px;
+  }
+  .popup {
+    max-width: 200px;
   }
 }
