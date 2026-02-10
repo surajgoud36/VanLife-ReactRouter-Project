@@ -85,9 +85,4 @@ During development the app uses MirageJS (see `src/server.js`) to provide `/api`
 - Components: `src/components/`
 - Pages and route files: `src/pages/`
 
-## Contributing
 
-This is a small demo; feel free to open issues or submit PRs to improve examples, add tests, or modernize patterns.
-
----
-_Generated README describing technologies and React concepts used in this repository._
